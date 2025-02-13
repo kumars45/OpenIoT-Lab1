@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Automation</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/login.html">Login</a></li>
+          <li><a href="/signup.html">Signup</a></li>
+          <li><div id="logout-button">Logout</div></li>
+        </ul>
+      </nav>
+    
+    <h1>Available Devices</h1>
+    <table id="deviceTable">
+        <thead>
+            <tr>
+                <th>Sr.No</th>
+                <th>ProductID</th>
+                <th>Location</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Get data from /dongles -->
+        </tbody>
+    </table>
+
+    <label for="device-id-availability">Product Id:</label>
+    <input type="text" id="device-id-availability" placeholder="Enter product id (not Sr. No.)">
+    <label for="duration-availability">Duration:</label>
+    <input type="text" id="duration-availability" placeholder="Enter duration in seconds"><br>
+    <!-- Space for availability -->
+    <div id="availability"></div>
+    <button id="check-availability">Check Availability</button>
+
+    <h1>Schedule Job</h1>
+    <input type="file" id="code-file" accept=".zip">
+    <label for="folder-name">Folder Name:</label>
+    <input type="text" id="folder-name" placeholder="Enter folder name"><br>
+    <label for="dfu-upload-name">Dfu Upload Name:</label>
+    <input type="text" id="dfu-upload-name" placeholder="Enter dfu upload name"><br>
+    <label for="device-id">Product Id:</label>
+    <input type="text" id="device-id" placeholder="Enter product id (not Sr. No)">
+    <label for="duration">Duration:</label>
+    <input type="text" id="duration" placeholder="Enter duration in seconds"><br>
+    <button id="schedule-job">Schedule Job</button>
+
+    <h1>Scheduled Jobs</h1>
+    <table id="scheduledJobsTable">
+        <thead>
+            <tr>
+                <th>Sr.No</th>
+                <th>Job Id</th>
+                <th>Device Id</th>
+                <th>Status</th>
+                <th>Start Time</th>
+                <th>Duration</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Get data from /scheduledJobs -->
+        </tbody>
+    </table>
+    
+    <h1>Finished Jobs</h1>
+    <table id="finishedJobsTable">
+        <thead>
+            <tr>
+                <th>Sr.No</th>
+                <th>Job Id</th>
+                <th>Device Id</th>
+                <th>Start Time</th>
+                <th>Duration</th>
+                <th>Download Log</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Get data from /finishedJobs -->
+        </tbody>
+    </table>
+
+    <script src="js/index.js" type="module"></script>
+</body>
+</html>

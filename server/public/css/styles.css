@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+h1 {
+  color: #005a9c;
+  margin-bottom: 20px;
+}
+
+input[type="file"],
+input[type="text"] {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-right: 10px;
+  width: calc(100% - 150px);
+  max-width: 500px;
+}
+
+button {
+  background-color: #0078d7;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005a9c;
+}
+
+.log {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-top: 20px;
+  max-height: 200px;
+  overflow-y: scroll;
+  background-color: #fff;
+}
+
+.log p {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin: 20px 0 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table th, table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table th {
+  background-color: #0078d7;
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+table button {
+  background-color: #0078d7;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+table button:hover {
+  background-color: white; 
+  color: #0078d7;
+  border: 2px solid #0078d7;
+}
+
+/* styles.css */
+
+/* Styles for the navigation bar */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #333;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #575757;
+  border-radius: 4px;
+}
+
+nav ul li div {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  display: block;
+}
+
+nav ul li div:hover {
+  background-color: #575757;
+  border-radius: 4px;
+}
