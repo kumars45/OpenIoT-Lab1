@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Installation and Setup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 1rem 0;
+            font-size: 1.5rem;
+        }
+        main {
+            padding: 2rem;
+            text-align: left;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 1rem 0;
+            margin-top: 20px;
+        }
+        code {
+            background: #eee;
+            padding: 2px 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        OpenIot-Lab1
+    </header>
+    <main>
+        <h2>Install Dependencies</h2>
+        <p>Run <code>npm i</code> in the root directory to install all the dependencies.</p>
+
+        <h2>Start Server</h2>
+        <p>This can be your local machine or a remote server.</p>
+        <p>Navigate to the <code>server</code> directory.</p>
+        <p>Run <code>node server.js</code> to start the server.</p>
+
+        <h2>Start Client</h2>
+        <p>This can be your NRF dongles or other input devices.</p>
+        <p>Stay in the root directory.</p>
+        <p>Run <code>node client.js</code> to start the client.</p>
+
+        <h2>Activate Environment</h2>
+        <p>Only on the client side, run <code>activate_env</code> to activate the environment.</p>
+
+        <h2>Environment Setup</h2>
+        <p>Create a <code>.env</code> file in the root directory for the client.</p>
+        <p>Create another <code>.env</code> file in the <code>master_server</code> directory for the server.</p>
+        <p>Refer to <code>.env.example</code> for an example of how to structure these files.</p>
+
+        <h2>Contiki-ng Sensors Integration</h2>
+        <p><a href="https://github.com/Asad1021/contiki-ng-sensor-integration" target="_blank">Sensors code</a>.</p>
+    </main>
+    <footer>
+        &copy; 2025 OpenIot-Lab1
+    </footer>
+</body>
+</html>
