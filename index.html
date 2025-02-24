@@ -5,39 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Installation and Setup</title>
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
             background-color: #f4f4f4;
+            text-align: center;
         }
         header {
             background: #333;
             color: white;
-            padding: 1rem 0;
-            font-size: 1.5rem;
+            padding: 1rem;
+            font-size: 1.8rem;
         }
         main {
+            flex: 1;
             padding: 2rem;
             text-align: left;
             max-width: 800px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            margin: 20px auto;
         }
         footer {
             background: #333;
             color: white;
-            padding: 1rem 0;
-            margin-top: 20px;
+            padding: 1rem;
+            text-align: center;
         }
-        code {
-            background: #eee;
-            padding: 2px 5px;
-            border-radius: 5px;
+        a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        h2 {
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 15px;
+            line-height: 1.6;
         }
     </style>
 </head>
@@ -46,29 +60,20 @@
         OpenIot-Lab1
     </header>
     <main>
-        <h2>Install Dependencies</h2>
-        <p>Run <code>npm i</code> in the root directory to install all the dependencies.</p>
+        <h2>Software files for setting up Testbed</h2>
+        <p><a href="https://github.com/example-repo" target="_blank">Testbed Software</a></p>
 
-        <h2>Start Server</h2>
-        <p>This can be your local machine or a remote server.</p>
-        <p>Navigate to the <code>server</code> directory.</p>
-        <p>Run <code>node server.js</code> to start the server.</p>
+        <h2>About the Testbed</h2>
+        <p>The testbed is designed for IoT research and development, focusing on wireless sensor networks and edge computing. 
+        It integrates multiple hardware components to simulate real-world IoT applications and enables experimentation with network protocols, data collection, and remote device management.</p>
 
-        <h2>Start Client</h2>
-        <p>This can be your NRF dongles or other input devices.</p>
-        <p>Stay in the root directory.</p>
-        <p>Run <code>node client.js</code> to start the client.</p>
-
-        <h2>Activate Environment</h2>
-        <p>Only on the client side, run <code>activate_env</code> to activate the environment.</p>
-
-        <h2>Environment Setup</h2>
-        <p>Create a <code>.env</code> file in the root directory for the client.</p>
-        <p>Create another <code>.env</code> file in the <code>master_server</code> directory for the server.</p>
-        <p>Refer to <code>.env.example</code> for an example of how to structure these files.</p>
+        <h2>Hardware Requirements</h2>
+        <p><a href="https://docs.nordicsemi.com/bundle/ug_nrf52840_dongle/page/UG/nrf52840_Dongle/intro.html" target="_blank">nRF52840 dongle for end nodes</a></p>
+        
+        <p><a href="https://www.raspberrypi.com/products/raspberry-pi-5/" target="_blank">Raspberry PI for fog nodes</a></p>
 
         <h2>Contiki-ng Sensors Integration</h2>
-        <p><a href="https://github.com/Asad1021/contiki-ng-sensor-integration" target="_blank">Sensors code</a>.</p>
+        <p><a href="https://github.com/Asad1021/contiki-ng-sensor-integration" target="_blank">Sensors code</a></p>
     </main>
     <footer>
         &copy; 2025 OpenIot-Lab1
